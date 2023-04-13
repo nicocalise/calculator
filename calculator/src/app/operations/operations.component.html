@@ -1,0 +1,31 @@
+<div class="calculator-container">
+<div class="input-group mb-3">
+    <input class="form-control" type="text" value="{{operationResult}}">
+</div>
+<div class="col-sm-12 p-1 m-0">
+    <button type="button" class="btn btn-primary btn-lg" (click)="click(1)">1</button>
+    <button type="button" class="btn btn-primary btn-lg" (click)="click(2)">2</button>
+    <button type="button" class="btn btn-primary btn-lg" (click)="click(3)">3</button>
+</div>
+<div class="col-sm-12 p-1 m-0">
+    <button type="button" class="btn btn-primary btn-lg" (click)="click(4)">4</button>
+    <button type="button" class="btn btn-primary btn-lg" (click)="click(5)">5</button>
+    <button type="button" class="btn btn-primary btn-lg" (click)="click(6)">6</button>
+    <button type="button" class="btn btn-danger btn-lg" (click)="delete()">C</button>
+</div>
+<div class="col-sm-12 p-1 m-0">
+    <button type="button" class="btn btn-primary btn-lg" (click)="click(7)">7</button>
+    <button type="button" class="btn btn-primary btn-lg" (click)="click(8)">8</button>
+    <button type="button" class="btn btn-primary btn-lg" (click)="click(9)">9</button>
+    <button type="button" class="btn btn-primary btn-lg" (click)="click(0)">0</button>  
+</div>
+<div class="col-sm-12 p-1 m-0">
+    <button type="button" class="btn btn-secondary btn-lg" (click)="operation('+')">+</button>
+    <button type="button" class="btn btn-secondary btn-lg" (click)="operation('-')">-</button>
+    <button type="button" class="btn btn-secondary btn-lg" (click)="operation('/')">/</button>
+    <button type="button" class="btn btn-secondary btn-lg" (click)="operation('x')">x</button>
+</div>
+<div class="col-sm-12 p-1 m-0">
+<button type="button" class="btn btn-success btn-lg btn_result" (click)="calculate()">=</button>
+</div>
+</div>
